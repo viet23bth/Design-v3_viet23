@@ -1,0 +1,24 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "lint": "sass viet2/scss/style.scss viet2/css/style.css --no-source-map",
+    "style": "sass viet2/scss/style.scss viet2/css/style.css --no-source-map",
+    "style-min": "sass viet2/scss/style.scss viet2/css/style.min.css --no-source-map",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-sass-guidelines": "^10.0.0"
+  }
+}

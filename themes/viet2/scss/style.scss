@@ -1,0 +1,166 @@
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+@import 'mobile-menu';
+
+@import '../../shared/fontawesome/scss/fontawesome.scss';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Source+Sans+3&display=swap');
+
+body{
+    background-color: $background-blue;
+    margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.main h1, p {
+    margin-left: 10px;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* Header */
+
+.header, .site-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Nav */
+
+.nav ul li {
+    padding: 5px;
+}
+.nav ul li a {
+    background-color: $background-blue;
+    color: $font-light;
+    border: solid 3px $border-light;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#nav ul li a:hover {
+    background-color: $color-hover;
+}
+
+/* Title */
+
+.title, .logo {
+    padding: 1em 1em 1em 0;
+}
+
+.picture {
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .title, .logo {
+        padding: 1em 1em 1em 0;
+    }
+    .title {
+        min-width: 50%;
+    }
+    .logo {
+        max-width: 30%;
+    }
+}
+
+.title * {
+    color: $font-light;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $border-light;
+    padding: 5px;
+}
+
+.footer a {
+    color: $font-light;
+}
+
+.footer .social {
+    font-size: 2rem;
+}
+
+/* Typografy */
+
+* {
+    font-family: 'Source Sans 3', 'sans-serif';
+}
+
+body {
+    line-height: 1.5rem;
+    color: $font-light;
+}
+
+p, td, th, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Links */
+
+a {
+    color: $font-light; 
+    text-decoration: none; 
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
